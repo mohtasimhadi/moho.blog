@@ -1,0 +1,133 @@
+{
+  "advisors": [
+    {
+      "name": "Tanzeel Rehman",
+      "designation": "Assistant Professor",
+      "affiliation": "Biosystems Engieering, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/tr.jpg",
+      "link": "https://eng.auburn.edu/directory/tur0001"
+    }
+  ],
+  "collaborators": [
+    {
+      "name": "Hamid Syed",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/hs.jpeg",
+      "link": "https://hamidsyed298.github.io/"
+    },
+    {
+      "name": "Faraz Ahmad",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/fa.jpeg",
+      "link": "https://www.linkedin.com/in/mfaraz-ahmad/"
+    },
+    {
+      "name": "Md Hasibur Rahman",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/hr.jpeg",
+      "link": "https://www.linkedin.com/in/md-hasibur-rahman-244473152/"
+    },
+    {
+      "name": "Louie Harris",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/lh.jpeg",
+      "link": "https://www.linkedin.com/in/louie-harris-7a6029253/"
+    },
+    {
+      "name": "Muhammad Waseem",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/wa.jpeg",
+      "link": "https://www.linkedin.com/in/waseemsofficial/"
+    },
+    {
+      "name": "Carter Freeman",
+      "designation": "Undergraduate Research Fellow",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Fall, 24 - Present",
+      "photo": "/imgs/people/cf.jpeg",
+      "link": "https://www.linkedin.com/in/carter-freeman-biosystem-engineering/"
+    },
+    {
+      "name": "Mesbahul Maruf",
+      "designation": "Graduate Research Assistant",
+      "affiliation": "Precision Agriculture Lab, Auburn University",
+      "duration": "Summer, 2024 - Present",
+      "photo": "/imgs/people/mm.jpeg",
+      "link": "https://www.linkedin.com/in/mesbah-maruf/"
+    }
+  ],
+  "students": [
+    {
+      "name": "Shanta Maria",
+      "degree": "Software Engineering",
+      "university": "Islamic University of Technology",
+      "duration": "Winter 2023",
+      "photo": "/imgs/people/sm.jpg",
+      "current_affiliation": "Intern at Intelligent Machines Limited",
+      "link": "https://www.linkedin.com/in/shanta-maria/"
+    },
+    {
+      "name": "Ayesha Afroza Mohsin",
+      "degree": "Software Engineering",
+      "university": "Islamic University of Technology",
+      "duration": "Winter 2023",
+      "photo": "/imgs/people/aam.jpeg",
+      "current_affiliation": "Intern at Streams Tech Ltd.",
+      "link": "https://www.linkedin.com/in/ayesha-afroza-mohsin/"
+    },
+    {
+      "name": "Nafisa Maliat",
+      "degree": "Software Engineering",
+      "university": "Islamic University of Technology",
+      "duration": "Winter 2023",
+      "photo": "/imgs/people/nm.jpg",
+      "current_affiliation": "Intern at Intelligent Machines Limited",
+      "link": "https://www.linkedin.com/in/nafisa-maliyat133/"
+    }
+  ],
+  "past_collaborators_mentors": [
+    {
+      "name": "Md. Hasanul Kabir",
+      "designation": "Professor",
+      "affiliation": "CSE, Islamic University of Technology",
+      "duration": "Winter, 2021 - Summer, 2022",
+      "photo": "/imgs/people/hk.jpg",
+      "link": "https://cse.iutoic-dhaka.edu/profile/hasanul/education"
+    },
+    {
+      "name": "Sabbir Ahmed",
+      "designation": "Assistant Professor",
+      "affiliation": "CSE, Islamic University of Technology",
+      "duration": "Winter, 2021 - Summer, 2022",
+      "photo": "/imgs/people/sa.png",
+      "link": "https://ggck43.github.io/"
+    },
+    {
+      "name": "Mohammad Ratul Mahjabin",
+      "designation": "Computer Science PhD Student",
+      "affiliation": "University of South Florida",
+      "duration": "Winter, 2021 - Summer, 2022",
+      "photo": "/imgs/people/rm.jpg",
+      "link": "https://ratul-mahjabin.github.io/"
+    },
+    {
+      "name": "Md Sabbir Rahman",
+      "designation": "Software Engineer",
+      "affiliation": "Cefalo",
+      "duration": "Winter, 2021 - Summer, 2022",
+      "photo": "/imgs/people/sr.jpeg",
+      "link": "https://www.linkedin.com/in/md-sabbir-rahman-2174a7195/"
+    }
+  ]
+}

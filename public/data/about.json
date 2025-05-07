@@ -1,0 +1,216 @@
+{
+  "work_experience": [
+    {
+      "position": "Graduate Research Assistant",
+      "company": "Precision Agriculture Lab, Auburn University",
+      "duration": "May, 2024 - Present",
+      "description": "",
+      "logo": "/imgs/logo/au.jpg"
+    },
+    {
+      "position": "Analytics Engineer",
+      "company": "Intelligent Machines Limited",
+      "duration": "Apr, 2022 - Mar, 2024",
+      "description": "",
+      "logo": "/imgs/logo/im.png"
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.S. in Biosystems Engineering",
+      "institution": "Auburn University",
+      "year": "May, 2024 - Present",
+      "logo": "/imgs/logo/au.jpg"
+    },
+    {
+      "degree": "BSc. Engg. in Software Engineering",
+      "institution": "Islamic University of Technology",
+      "year": "Jan, 2019 - May, 2023",
+      "logo": "/imgs/logo/iut.png"
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      { "name": "Python" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "R" },
+      { "name": "Java" },
+      { "name": "Bash" },
+      { "name": "C/C++" },
+      { "name": "SQL" }
+    ],
+    "Data Science & Machine Learning": [
+      { "name": "NumPy" },
+      { "name": "Pandas" },
+      { "name": "Matplotlib" },
+      { "name": "PyTorch" },
+      { "name": "Tensorflow" },
+      { "name": "Tensorboard" },
+      { "name": "Keras" },
+      { "name": "OpenCV" },
+      { "name": "Textract" },
+      { "name": "Scikit-learn" },
+      { "name": "Tableau" },
+      { "name": "Google Big Query" },
+      { "name": "Microsoft Power BI" }
+    ],
+    "Web Technologies": [
+      { "name": "FastAPI" },
+      { "name": "Flask" },
+      { "name": "Django" },
+      { "name": "Selenium" },
+      { "name": "React" },
+      { "name": "Node" },
+      { "name": "Express" }
+    ],
+    "Database": [
+      { "name": "MySQL" },
+      { "name": "MongoDB" },
+      { "name": "Firebase" },
+      { "name": "Oracle" }
+    ],
+    "Cloud Technologies": [
+      { "name": "Azure" },
+      { "name": "AWS" },
+      { "name": "RabbitMQ" }
+    ],
+    "DevOps & Version Control": [
+      { "name": "Git" },
+      { "name": "GitHub" },
+      { "name": "Docker" },
+      { "name": "Kubernetes" }
+    ],
+    "Embedded Systems": [
+      { "name": "Nvidia Jetson Modules" },
+      { "name": "Raspberry Pi" },
+      { "name": "Arduino" }
+    ],
+    "Other": [
+      { "name": "ArcGIS" },
+      { "name": "Pixd4Mapper" },
+      { "name": "Markdown" },
+      { "name": "Latex" },
+      { "name": "MS Office" },
+      { "name": "Adobe Photoshop" },
+      { "name": "Figma" }
+    ]
+  },
+  "certifications": [
+    {
+      "title": "Data Analytics Professional Certificate",
+      "issuer": "Google",
+      "year": "2022",
+      "logo": "/imgs/logo/google.webp"
+    },
+    {
+      "title": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": "2022",
+      "logo": "/imgs/logo/dlai.png"
+    },
+    {
+      "title": "Building Web Applications in Django",
+      "issuer": "University of Michigan",
+      "year": "2022",
+      "logo": "/imgs/logo/um.png"
+    },
+    {
+      "title": "Neural Networks and Deep Learning",
+      "issuer": "DeepLearning.AI",
+      "year": "2021",
+      "logo": "/imgs/logo/dlai.png"
+    }
+  ],
+  "cv": {
+    "link": "/data/CV_Mohtasim_Hadi_Rafi.pdf",
+    "last_updated": "April 2025"
+  },
+  "professional_associations": [
+    {
+      "name": "American Society of Agricultural and Biological Engineers",
+      "logo": "/imgs/logo/asabe.svg"
+    },
+    {
+      "name": "International Society of Precision Agriculture",
+      "logo": "/imgs/logo/ispa.png"
+    },
+    {
+      "name": "American Society for Horticultural Science",
+      "logo": "/imgs/logo/ahs.jpg"
+    },
+    {
+      "name": "Institute of Electrical and Electronics Engineers",
+      "logo": "/imgs/logo/ieee.jpg"
+    }
+  ],
+  "achievements": [
+    {
+      "category": "Honors and Awards",
+      "items": [
+        {
+          "title": "Harnessing Data Science and AI for Collaborative Advances Forum in Production Agriculture Forum",
+          "details": "Winner of Poster Competition, AL, USA",
+          "date": "Apr, 2025",
+          "image": "/imgs/logo/aaes.png",
+          "link": "https://aaes.auburn.edu/data-ai-forum/"
+        },
+        {
+          "title": "FIRA USA Farm Robotics Challenge",
+          "details": "Excellency in Productivity (USD 5,000), CA, USA",
+          "date": "Oct, 2024",
+          "image": "/imgs/logo/fira.jpeg",
+          "link": "https://www.farmroboticschallenge.ai/2024"
+        },
+        {
+          "title": "European Rover Challenge",
+          "details": "10th in the world, Remote",
+          "date": "Sep, 2021",
+          "image": "/imgs/logo/erc.jpeg",
+          "link": "https://roverchallenge.eu/full-erc2021-scoreboard/"
+        },
+        {
+          "title": "10th ICT Fest, IUT",
+          "details": "Second Runner’s up in Hackathon (BDT 10,000), Gazipur, Bangladesh",
+          "date": "Apr, 2019",
+          "image": "/imgs/logo/if.jpeg"
+        },
+        {
+          "title": "National High School Programming Contest",
+          "details": "Regional Winner, Mymensingh, Bangladesh",
+          "date": "Jun, 2016",
+          "image": "/imgs/logo/nhspc.jpeg"
+        }
+      ]
+    },
+    {
+      "category": "Grants & Fellowships",
+      "items": [
+        {
+          "title": "GSC Travel Fellowship",
+          "details": "Received $400 to present at American Society of Horticultural Science Conference at New Orleans, LA, USA",
+          "date": "July, 2024",
+          "image": "/imgs/logo/gsc.jpeg"
+        },
+        {
+          "title": "International Conference Travel Support, College of Agriculture, Auburn University",
+          "details": "Received $1000 to present at  ASABE Annual International Meeting in Torronto, Canada",
+          "date": "July, 2024",
+          "image": "/imgs/logo/aua.png"
+        },
+        {
+          "title": "GSC Travel Fellowship",
+          "details": "Received $400 to present at AI in Agriculture and Natural Resources Conference, Mississippi",
+          "date": "March, 2024",
+          "image": "/imgs/logo/gsc.jpeg"
+        },
+        {
+          "title": "India Bangladesh Maitree Muktijoddha Sontan Scholarship",
+          "details": "BDT 50,000 (USD equivalent 600) during junior year of undergrad",
+          "date": "July, 2019",
+          "image": "/imgs/logo/ib.jpeg"
+        }
+      ]
+    }
+  ]
+}

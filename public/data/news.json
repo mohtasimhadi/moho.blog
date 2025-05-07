@@ -1,0 +1,79 @@
+{
+  "news": [
+    {
+      "date": "May 04, 2025",
+      "news": "Got invitation to perticipate in the <a href='https://cybertractorchallenge.org/'>4th Annual CyberTractor Challenge</a>  in Ames, Iowa on the campus of <a href='https://www.iastate.edu/'>Iowa State University</a>, June 15-20, 2025!"
+    },{
+      "date": "April 21, 2025",
+      "news": "Became winner of the poster presentation at <a href='https://aaes.auburn.edu/data-ai-forum/'> Harnessing Data Science and AI for Collaborative Advances in Production Agriculture</a> at <a href='https://www.auburn.edu/'>Auburn University</a>."
+    },
+    {
+      "date": "April 21, 2025",
+      "news": "Presented poster titled KBTrack: Long Term Tracking for Plant Counting with Cloud-Enabled Plant Segmentation Framework for Ornamental Nursery Inventory Management at the <a href='https://aaes.auburn.edu/data-ai-forum/'> Harnessing Data Science and AI for Collaborative Advances in Production Agriculture</a> at <a href='https://www.auburn.edu/'>Auburn University</a>."
+    },
+    {
+      "date": "April 02, 2025",
+      "news": "Presented at the <b>AI in Agriculture and Natural Resources Conference</b> at <a href='https://www.msstate.edu'>Mississippi State University</a>."
+    },
+    {
+      "date": "March 26, 2025",
+      "news": "Presented at the <b>Auburn Research Symposium 2025</b> at <a href='https://www.auburn.edu'>Auburn University</a>, AL, USA."
+    },
+    {
+      "date": "March 17, 2025",
+      "news": "Abstract titled <b>Cloud-Enabled Plant Segmentation and Tracking Framework for Ornamental Nursery Inventory Management</b> accepted for oral presentation at <a href='https://www.asabemeetings.org/'> Annual International Meeting of ASABE</a> at Sheraton Center Toronto Hotel, Toronto, Ontario, Canada."
+    },
+    {
+      "date": "March 09, 2025",
+      "news": "Abstract titled <b>Cloud-Enabled Plant Segmentation and Tracking Framework for Ornamental Nursery Inventory Management</b> accepted for oral presentation at <b>AI in Agriculture and Natural Resources Conference</b> at <a href='https://www.msstate.edu'>Mississippi State University</a>."
+    },
+    {
+      "date": "February 21, 2025",
+      "news": "Received <b>GSC Travel Fellowship of $400</b> for presenting work in AI in Agriculture and Natural Resources Conference at <a href='https://www.msstate.edu'>Mississippi State University</a> from <b>Graduate Student Council, Auburn University</b>."
+    },
+    {
+      "date": "October 05, 2024",
+      "news": "Got <b>Excellency in Productivity ($5,000)</b> award in <a href='https://www.fira-agtech.com'>FIRA USA Farm Robotics Challenge 2025</a>."
+    },
+    {
+      "date": "May 16, 2024",
+      "news": "Joined <b>Auburn University</b> as a Graduate Research Assistant in the <b>Precision Agriculture Lab</b>."
+    },
+    {
+      "date": "May 16, 2024",
+      "news": "Started <b>MS in Biosystems Engineering</b> at <a href='https://www.auburn.edu'>Auburn University</a>, AL, USA."
+    },
+    {
+      "date": "March 31, 2024",
+      "news": "Left <b>Intelligent Machines Limited</b>."
+    },
+    {
+      "date": "May 24, 2023",
+      "news": "Graduated with <b>First Class</b> from <a href='https://www.iutoic-dhaka.edu/'>Islamic University of Technology</a> with a BSc degree in Software Engineering."
+    },
+    {
+      "date": "May 19, 2023",
+      "news": "Undergraduate thesis titled <a href='http://103.82.172.44:8080/xmlui/handle/123456789/2051'>An Efficient Deep Learning-based approach for Recognizing Agricultural Pests in the Wild</a> defended."
+    },
+    {
+      "date": "April 01, 2022",
+      "news": "Joined <b>Intelligent Machines Limited</b> as an Analytics Engineer."
+    },
+    {
+      "date": "September 15, 2021",
+      "news": "IUT Mars Rover team gained 10th position globally in <b>European Mars Rover Challenge 2021.</b>"
+    },
+    {
+      "date": "April 14, 2019",
+      "news": "Became <b>Second Runner Up (BDT 10,000)</b> in Hackathon at 10th ICT Fest, IUT."
+    },
+    {
+      "date": "July 23, 2019",
+      "news": "Received <b>India Bangladesh Maitree Muktijoddha Sontan Scholarship</b> of BDT 50,000 from Indian High Commission and Ministry of Liberation War Affairs, Bangladesh."
+    },
+    {
+      "date": "January 07, 2019",
+      "news": "Started <b>BSc in Software Engineering</b> at <a href='https://www.iutoic-dhaka.edu/'>Islamic University of Technology</a>, Gazipur, Bangladesh."
+    }
+  ]
+}
