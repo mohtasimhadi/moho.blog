@@ -5,7 +5,7 @@ import { BlogPost } from "@/types/blogs";
 
 export default function BlogCard({ post }: { post: BlogPost }) {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <div className="overflow-hidden">
       <Link href={`/blog/${post.category}/${post.id}`}>
         {post.coverImage && (
           <div className="relative h-48">
@@ -18,7 +18,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
             />
           </div>
         )}
-        <div className="p-4">
+        <div className="p-4 pl-0">
           <div className="flex justify-between items-start">
             <span className="text-sm text-gray-500 capitalize">
               {post.category}

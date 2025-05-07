@@ -9,15 +9,12 @@ export default async function BlogPage() {
     getDatabase(process.env.NOTION_POETRIES_DB_ID!),
   ]);
 
-  // src/app/blogs/page.tsx
   const transformPost = (
     post: any,
     category: BlogPost["category"]
   ): BlogPost => {
-    console.log('Notion cover object:', JSON.stringify(post, null, 2));
     let coverImageUrl: string | undefined;
 
-    // Handle both file and external cover images
     if (post.cover?.type === "file" && post.cover.file?.url) {
       coverImageUrl = post.cover.file.url;
     } else if (post.cover?.type === "external" && post.cover.external?.url) {
@@ -34,20 +31,58 @@ export default async function BlogPage() {
       coverImage: coverImageUrl,
     };
   };
-  const allPosts = [
-    ...typistPosts.map((post) => transformPost(post, "the-typist")),
-    ...journalPosts.map((post) => transformPost(post, "journals")),
-    ...poetryPosts.map((post) => transformPost(post, "poetries")),
-  ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Transform posts for each category
+  const typistBlogs = typistPosts.map((post) => transformPost(post, "the-typist"));
+  const journalBlogs = journalPosts.map((post) => transformPost(post, "journals"));
+  const poetryBlogs = poetryPosts.map((post) => transformPost(post, "poetries"));
+
+  // Sort each category separately
+  const sortByDate = (a: BlogPost, b: BlogPost) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime();
+
+  typistBlogs.sort(sortByDate);
+  journalBlogs.sort(sortByDate);
+  poetryBlogs.sort(sortByDate);
 
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {allPosts.map((post) => (
-          <BlogCard key={post.id} post={post} />
-        ))}
+      {/* The Typist Section */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
+          The Typist
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {typistBlogs.map((post) => (
+            <BlogCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+
+      {/* Journals Section */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
+          Journals
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {journalBlogs.map((post) => (
+            <BlogCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+
+      {/* Poetries Section */}
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
+          Poetries
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {poetryBlogs.map((post) => (
+            <BlogCard key={post.id} post={post} />
+          ))}
+        </div>
       </div>
     </div>
   );
