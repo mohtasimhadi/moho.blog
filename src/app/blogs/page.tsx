@@ -33,12 +33,18 @@ export default async function BlogPage() {
   };
 
   // Transform posts for each category
-  const typistBlogs = typistPosts.map((post) => transformPost(post, "the-typist"));
-  const journalBlogs = journalPosts.map((post) => transformPost(post, "journals"));
-  const poetryBlogs = poetryPosts.map((post) => transformPost(post, "poetries"));
+  const typistBlogs = typistPosts.map((post) =>
+    transformPost(post, "the-typist")
+  );
+  const journalBlogs = journalPosts.map((post) =>
+    transformPost(post, "journals")
+  );
+  const poetryBlogs = poetryPosts.map((post) =>
+    transformPost(post, "poetries")
+  );
 
   // Sort each category separately
-  const sortByDate = (a: BlogPost, b: BlogPost) => 
+  const sortByDate = (a: BlogPost, b: BlogPost) =>
     new Date(b.date).getTime() - new Date(a.date).getTime();
 
   typistBlogs.sort(sortByDate);
@@ -46,42 +52,35 @@ export default async function BlogPage() {
   poetryBlogs.sort(sortByDate);
 
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">Blog</h1>
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="md:w-3/4 p-4">
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">The Typist</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {typistBlogs.slice(0, 3).map((post) => (
+              <BlogCard key={post.id} post={post} />
+            ))}
+          </div>
+        </div>
 
-      {/* The Typist Section */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-          The Typist
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {typistBlogs.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Journals</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {journalBlogs.slice(0, 3).map((post) => (
+              <BlogCard key={post.id} post={post} />
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Journals Section */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-          Journals
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {journalBlogs.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
-        </div>
-      </div>
-
-      {/* Poetries Section */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-          Poetries
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {poetryBlogs.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
+      <div className="md:w-1/4 p-4">
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Poetries</h2>
+          <div className="grid grid-cols-1 gap-6">
+            {poetryBlogs.slice(0, 3).map((post) => (
+              <BlogCard key={post.id} post={post} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
