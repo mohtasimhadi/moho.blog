@@ -6,7 +6,8 @@ import { BlogPost } from "@/types/blogs";
 export default function BlogCard({ post }: { post: BlogPost }) {
   return (
     <div className="overflow-hidden">
-      <Link href={`/blogs/${post.category}/${post.id}`}>
+      {/* <Link href={`/blogs/${post.category}/${post.id}`}> */}
+      <Link href={post.url}>
         {post.coverImage && (
           <div className="relative h-48">
             <Image
