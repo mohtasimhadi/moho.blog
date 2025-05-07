@@ -1,6 +1,7 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { BlogPost } from '@/types/blogs'
+// src/app/components/BlogCard.tsx
+import Link from "next/link";
+import Image from "next/image";
+import { BlogPost } from "@/types/blogs";
 
 export default function BlogCard({ post }: { post: BlogPost }) {
   return (
@@ -13,6 +14,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
               alt={post.title}
               fill
               className="object-cover"
+              unoptimized
             />
           </div>
         )}
@@ -41,5 +43,5 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         </div>
       </Link>
     </div>
-  )
+  );
 }
