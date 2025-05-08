@@ -1,35 +1,11 @@
-import { getDatabase } from "@/lib/notion";
+import { getDatabase, transformPost } from "@/lib/notion";
 import BlogCard from "@/app/components/BlogCard";
 import { BlogPost } from "@/types/blogs";
 
-export default async function BlogSubPage() {
+export default async function BlogPage() {
   const [posts] = await Promise.all([
     getDatabase(process.env.NOTION_JOURNALS_DB_ID!),
   ]);
-
-  const transformPost = (
-    post: any,
-    category: BlogPost["category"]
-  ): BlogPost => {
-    let coverImageUrl: string | undefined;
-
-    if (post.cover?.type === "file" && post.cover.file?.url) {
-      coverImageUrl = post.cover.file.url;
-    } else if (post.cover?.type === "external" && post.cover.external?.url) {
-      coverImageUrl = post.cover.external.url;
-    }
-
-    return {
-      id: post.id,
-      title: post.properties.Name?.title[0]?.plain_text || "Untitled",
-      slug: post.id,
-      date: post.properties.date?.date?.start || new Date().toISOString(),
-      category,
-      tags: post.properties.Tags?.multi_select?.map((tag: any) => tag.name),
-      coverImage: coverImageUrl,
-      url: post.url,
-    };
-  };
 
   const blogs = posts.map((post) =>
     transformPost(post, "journals")
