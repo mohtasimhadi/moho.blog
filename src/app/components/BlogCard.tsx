@@ -7,7 +7,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
   return (
     <div className="overflow-hidden">
       {/* <Link href={`/blogs/${post.category}/${post.id}`}> */}
-      <Link href={post.url}>
+      <Link href={`/blogs/${post.category}/${post.id.replace(/-/g, '')}`}>
         {post.coverImage && (
           <div className="relative h-48">
             <Image
