@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import BlogCard from "@/app/components/BlogCard";
 import { BlogPost } from "@/types/blogs";
 
-export default function BlogPage() {
+export default function Journals() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const [searchQuery, setSearchQuery] = useState("");

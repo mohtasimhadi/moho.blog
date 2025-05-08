@@ -1,31 +1,46 @@
-import { getDatabase, transformPost } from "@/lib/notion";
+"use client"
+
 import BlogCard from "../components/BlogCard";
 import { BlogPost } from "@/types/blogs";
+import { useEffect, useState } from "react";
 
-export default async function BlogPage() {
-  const [typistPosts, journalPosts, poetryPosts] = await Promise.all([
-    getDatabase(process.env.NOTION_TYPIST_DB_ID!),
-    getDatabase(process.env.NOTION_JOURNALS_DB_ID!),
-    getDatabase(process.env.NOTION_POETRIES_DB_ID!),
-  ]);
+export default function Blogs() {
+  const [journals, setJournals] = useState<BlogPost[]>([]);
+  const [poetries, setPoetries] = useState<BlogPost[]>([]);
+  const [typist, setTypist] = useState<BlogPost[]>([]);
 
-  const typistBlogs = typistPosts.map((post) =>
-    transformPost(post, "the-typist")
-  );
-  const journalBlogs = journalPosts.map((post) =>
-    transformPost(post, "journals")
-  );
-  const poetryBlogs = poetryPosts.map((post) =>
-    transformPost(post, "poetries")
-  );
-
-  // Sort each category separately
-  const sortByDate = (a: BlogPost, b: BlogPost) =>
-    new Date(b.date).getTime() - new Date(a.date).getTime();
-
-  typistBlogs.sort(sortByDate);
-  journalBlogs.sort(sortByDate);
-  poetryBlogs.sort(sortByDate);
+  useEffect(() => {
+    const fetchJournals = async () => {
+      const response = await fetch('/api/journals');
+      if (response.ok) {
+        const blogs: BlogPost[] = await response.json();
+        setJournals(blogs)
+      } else {
+        console.error("Failed to fetch journals");
+      }
+    };
+    const fetchPoetries = async () => {
+      const response = await fetch('/api/poetries');
+      if (response.ok) {
+        const blogs: BlogPost[] = await response.json();
+        setPoetries(blogs)
+      } else {
+        console.error("Failed to fetch journals");
+      }
+    };
+    const fetchTypist = async () => {
+      const response = await fetch('/api/theTypist');
+      if (response.ok) {
+        const blogs: BlogPost[] = await response.json();
+        setTypist(blogs)
+      } else {
+        console.error("Failed to fetch journals");
+      }
+    };
+    fetchTypist();
+    fetchPoetries();
+    fetchJournals();
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row gap-4">
@@ -33,18 +48,28 @@ export default async function BlogPage() {
         <div className="mb-8 bg-gray-50 p-4">
           <h2 className="text-2xl font-semibold mb-4">The Typist</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {typistBlogs.slice(0, 3).map((post) => (
+            {typist.slice(0, 3).map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
+          </div>
+          <div className="flex justify-end mt-4">
+            <a href="/blogs/the-typist" className="text-blue-500 hover:underline">
+              See more →
+            </a>
           </div>
         </div>
 
         <div className="mb-8 p-4">
           <h2 className="text-2xl font-semibold mb-4">Journals</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {journalBlogs.slice(0, 3).map((post) => (
+            {journals.slice(0, 3).map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
+          </div>
+          <div className="flex justify-end mt-4">
+            <a href="/blogs/journals" className="text-blue-500 hover:underline">
+              See more →
+            </a>
           </div>
         </div>
       </div>
@@ -53,9 +78,14 @@ export default async function BlogPage() {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Poetries</h2>
           <div className="grid grid-cols-1 gap-6">
-            {poetryBlogs.slice(0, 3).map((post) => (
+            {poetries.slice(0, 8).map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
+          </div>
+          <div className="flex justify-end mt-4">
+            <a href="/blogs/poetries" className="text-blue-500 hover:underline">
+              See more →
+            </a>
           </div>
         </div>
       </div>
