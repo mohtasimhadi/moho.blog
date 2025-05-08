@@ -47,7 +47,6 @@ export const transformPost = (
   return {
     id: post.id,
     title: post.properties.Name?.title[0]?.plain_text || "Untitled",
-    slug: post.id,
     date: post.properties.date?.date?.start || new Date().toISOString(),
     category,
     tags: post.properties.Tags?.multi_select?.map((tag: any) => tag.name),

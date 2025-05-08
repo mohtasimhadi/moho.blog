@@ -2,10 +2,9 @@
 export interface BlogPost {
   id: string;
   title: string;
-  slug: string;
   date: string;
   url: string;
-  category: "the-typist" | "journals" | "poetries";
+  category: "featured" | "journals" | "news" | "notes" | "patents" | "poetries" | "presentations" | "projects" | "publications" | "the-typist";
   tags?: string[];
   coverImage?: string;
 }
