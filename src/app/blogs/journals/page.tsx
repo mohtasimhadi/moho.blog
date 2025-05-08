@@ -11,12 +11,12 @@ export default function BlogPage() {
   const [selectedSort, setSelectedSort] = useState("desc");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);  // Track current page
-  const postsPerPage = 5;  // Set posts per page
+  const postsPerPage = 9;  // Set posts per page
 
   // Fetch posts from the API
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch('/api/getJournals');
+      const response = await fetch('/api/journals');
       if (response.ok) {
         const blogs: BlogPost[] = await response.json();
         setPosts(blogs);
