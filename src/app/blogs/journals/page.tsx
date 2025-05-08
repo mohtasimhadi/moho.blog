@@ -9,7 +9,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await fetch('/api/getPosts');
+      const response = await fetch('/api/getJournals');
       if (response.ok) {
         const blogs: BlogPost[] = await response.json();
         setPosts(blogs);
